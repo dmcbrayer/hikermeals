@@ -5,7 +5,6 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= analytics_init if Rails.env.production? %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="Wlm0u3IH3_RhXCt0EvRJCveuHcAu3vZEVf0ih1E8QfQ" />
 </head>
@@ -22,6 +21,7 @@
 	<div class="container-fluid">
 		<%= yield %>
 	</div>
+	<%= render 'layouts/footer' %>
 
 </body>
 </html>

@@ -3,13 +3,22 @@
 		<div class="jumbotron center">
 			<h1>Don't hike hungry.</h1>
 			<h3>Take the stress out of planning food for your hike.</h3>
-		</div>
+					</div>
 	</div>
 	<div class="col-md-5">
 		<div class="jumbotron">
-				<h4>We're launching on August 1st. <br />  
-				Enter your e-mail address to get special access.</h3>
-				<!-- Begin MailChimp Signup Form -->
+				<h2 class="left-align">We're launching on August 1st.  Enter your e-mail address to get special access.</h2>
+
+				<form class="form-horizontal" role="form">
+				  <div class="form-group form-group-lg">
+				    <div class="col-sm-10">
+				      <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Email Address">
+				    </div>
+				  </div>
+				  <button type="submit" class="btn btn-primary" style="width: 100px">Feed me!</button>
+				</form>
+
+				<!-- Begin MailChimp Signup Form 
 				<link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 				<style type="text/css">
 					#mc_embed_signup{background:none; clear:left; font:14px Helvetica,Arial,sans-serif; }
@@ -20,13 +29,14 @@
 				<form action="//hikermeals.us8.list-manage.com/subscribe/post?u=2772af703ff4689cd769bf1f3&amp;id=fd2517bb8a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<label for="mce-EMAIL"></label>
 					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-				    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+				   
 				    <div style="position: absolute; left: -5000px;"><input type="text" name="b_2772af703ff4689cd769bf1f3_fd2517bb8a" tabindex="-1" value=""></div>
 				    <div class="clear" style="overflow: hidden; padding-right: .5em;"><input type="submit" value="Feed me!" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 				</form>
 				</div>
 
-			<!--End mc_embed_signup-->
+			End mc_embed_signup-->
+
 		</div>
 	</div>
 </div>
@@ -39,18 +49,21 @@
 <div class="row">
 	<div class="col-md-4 center">
 		<div class="caption">
-			<h3>Pick your meal</h3>
-			<p>Choose from our variety of hiker meals that combine taste and nutrition with packability.  Just tell us how many days you'll spend on the trail and we'll take care of the rest.</p>
+			<%= image_tag("spork.jpg", size: "243x75") %>
+			<h3>Pick</h3>
+			<p>Choose from our variety of meals that combine taste and nutrition with packability.  Just tell us how many days you'll spend on the trail and we'll take care of the rest.</p>
 		</div>
 	</div>
 	<div class="col-md-4 left-border center">
 		<div class="caption">
+			<%= image_tag("truck.png", size: "150x75") %>
 			<h3>Ship</h3>
 			<p>We will package your trip's meals in a lightweight reusable stuff sack.  Don't worry, the spork's included.  Then we'll ship it to your doorstep before your next adventure.</p>
 		</div>
 	</div>
 	<div class="col-md-4 left-border center">
 		<div class="caption">
+			<%= image_tag("hikers.gif", size: "75") %>
 			<h3>Hike</h3>
 			<p>Take your meals and go - we remove the stress of planning meals, forgetting items, having too much food, or packing too heavy.</p>
 		</div>

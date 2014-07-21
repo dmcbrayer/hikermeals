@@ -15,6 +15,11 @@ class SignupsController < ApplicationController
   	end
   end
 
+  def dwj
+    @signups_count = Signup.all.count
+  end
+
+
   private
 
   	# Never trust parameters from the scary internet, only allow the white list through.

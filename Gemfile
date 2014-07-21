@@ -13,6 +13,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'unicorn'
+#gem 'jquery-turbolinks'
 
 
 group :development, :test do

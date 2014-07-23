@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140722144812) do
+ActiveRecord::Schema.define(version: 20140723220431) do
 
   create_table "signups", force: true do |t|
     t.string   "email"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20140722144812) do
     t.datetime "updated_at"
     t.string   "referral_code"
     t.integer  "referrer_id"
+    t.boolean  "early_adopter", default: false
+    t.string   "ip_address"
   end
 
 end

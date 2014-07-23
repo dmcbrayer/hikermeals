@@ -13,7 +13,6 @@ class Signup < ActiveRecord::Base
   before_create :create_referral_code
   after_create :send_welcome_email
 
-  private
   
     def create_referral_code
         referral_code = SecureRandom.hex(5)

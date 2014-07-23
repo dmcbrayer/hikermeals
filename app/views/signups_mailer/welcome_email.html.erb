@@ -4,10 +4,25 @@
 	    <meta http-equiv="content-type" content="text/html" charset="utf-8">
 	</head>
 	<body>
-		<h1>Welcome to Hiker Meals!</h1>
-		<p>We're excited that you decided to sign up with us and look forward to the future.</p>
-		<p>This is your referral code: <%= @signup.referral_code %></p>
-		<p>Thanks for joining and have a great day!</p>
+		<h1>Thanks for signing up for Hiker Meals!</h1>
+
+		<p>We look forward to sending you delicious trail meals.  We're busily recruiting grizzled mountaineers to help us select and pack your food, so check our site for updates!</p>
+
+		<p>In the meantime, you can refer your friends to the site to earn discounts on our products.  Just send out the link below, and if non-robots sign up with this link, you'll get credit! This is your referral code.  Cherish it: http://www.hikermeals.com?ref=<%= @signup.referral_code %></p>
+
+		<p>You could also just <a href="http://twitter.com/share?url=http://www.hikermeals.com?ref=<%= CGI::escape(@signup.referral_code) %>&text=<%= CGI::escape(@twitter_message) %>" target="_blank">Tweet it</a></p>
+
+		<ul>Reward Tiers:
+			<li>Refer 5 friends and get 10% off your first purchase</li>
+			<li>Refer 10 friends and get 25% off your first purchase</li>
+			<li>Refer 15 friends and get 50% off your first purchase</li>
+			<li>Refer 500 friends and I will personally buy you dinner at a reasonably priced restaurant of your choosing.</li>
+		</ul>  
+
+		<p>Happy Trails!</p>
+
+		<p>Daniel, Will, and the rest of the Beards</p>
+		<p><small><a href="#">Legal Stuff</a></small></p>
 
 
 	</body>

@@ -21,12 +21,14 @@ class SignupsController < ApplicationController
       puts '------------'
       puts @referred_by.email if @referred_by
       puts params[:signup][:email].inspect
-      puts request.env['HTTP_X_FORWARDED_FOR'].inspect
+      puts request.remote_ip.inspect
       puts '------------'
 
       if !@referred_by.nil?
         @signup.referrer = @referred_by
       end
+
+      @signup.ip_address = request.remote_ip
 
       @signup.save
       

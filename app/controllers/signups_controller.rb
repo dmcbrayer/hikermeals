@@ -25,6 +25,7 @@ class SignupsController < ApplicationController
       end
 
       @signup.save
+      
     end
 
   	respond_to do |format|

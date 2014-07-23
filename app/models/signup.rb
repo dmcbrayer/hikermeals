@@ -11,6 +11,7 @@ class Signup < ActiveRecord::Base
   validates :referral_code, :uniqueness => true
 
   before_create :create_referral_code
+  after_create :send_welcome_email
 
   private
   
@@ -24,6 +25,10 @@ class Signup < ActiveRecord::Base
         end
 
         self.referral_code = referral_code
+    end
+
+    def send_welcome_email
+        SignupsMailer.welcome_email(self).deliver
     end
 
 end

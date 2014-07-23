@@ -58,6 +58,48 @@ textarea {
   border-left: 1px solid #bdc3c7;
 }
 
+.copy-link {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #bdc3c7;
+  text-align: center;
+  width: auto;
+}
+
+/* Referral Link Styling */
+
+#refer .share-wrap .social-links{
+  width: 120px;
+  height: 37px;
+  margin: 25px auto 0;
+  text-align: center;
+}
+
+#refer .share-wrap .social-links a, #refer .share-wrap .social-links div{
+  display: inline-block;
+}
+
+#refer .share-wrap .social-links .fb{
+  background: url(/assets/fb.png);
+  background-size: 27px 27px;
+  width: 27px;
+  height: 27px;
+}
+
+#refer .share-wrap .social-links .twit{
+  background: url(/assets/twit.png);
+  background-size: 27px 27px;
+  width: 27px;
+  height: 27px;
+}
+
+#refer .share-wrap .social-links .sep{
+  height: 28px;
+  width: 1px;
+  background: #BAB9BA;
+  margin: 0 20px;
+}
+
 
 /* typography */
 
@@ -151,7 +193,11 @@ footer {
 
 .panel {
 	-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+  .panel-heading {
+    -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+  }
 }
+
 
 /* forms */
 

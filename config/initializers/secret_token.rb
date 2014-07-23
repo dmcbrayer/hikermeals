@@ -1,0 +1,1 @@
+Hikermeals::Application.config.secret_token = ENV["RAILS_SECRET"] || 'c42e007ed2cc0effb0e0e42468830ba0192fe8b3e7cf1ceb14565ff5f6235e543af929a130c8b5a7f79b911613ba6df018d09499f94397c029debe6b753b2e27'

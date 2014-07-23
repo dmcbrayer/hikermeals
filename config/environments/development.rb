@@ -13,10 +13,20 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
-  # Don't care if the mailer can't send.
+  # Set up mailer
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { :address => "127.0.0.1", :port => 1025 }
+  config.action_mailer.smtp_settings = { 
+    #CHANGE THIS BEFORE PUSHING LIVE!!!
+    #:address => "127.0.0.1", :port => 1025
+    address: "smtp.gmail.com",
+    port: "587",
+    domain: "gmail.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: 'daniel@hikermeals.com',
+    password: '1hikermeals1' 
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

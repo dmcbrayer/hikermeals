@@ -1,5 +1,5 @@
 class SignupsMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "trailstaff@hikermeals.com"
 
   def welcome_email(signup)
   	@signup = signup

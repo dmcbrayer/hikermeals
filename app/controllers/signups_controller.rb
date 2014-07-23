@@ -3,6 +3,10 @@ class SignupsController < ApplicationController
 
   def new
   	@signup = Signup.new
+
+    respond_to do |format|
+      format.html
+    end
   end
 
   def create

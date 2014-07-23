@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  root 'pages#home'
+  root 'signups#new'
   resources :signups, :only => [:new, :create]
 
   get '/about', to: 'pages#about'

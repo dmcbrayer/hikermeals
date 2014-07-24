@@ -39,7 +39,7 @@ class SignupsController < ApplicationController
           cookies[:h_email] = {:value => @signup.email}
         	format.html { redirect_to :thanks }
       	else
-        	format.html { render :new, :alert => "Something went wrong!" }
+        	format.html { render :new, :alert => "Something went wrong!  If you've already signed up, make sure that you have cookies enabled in both your browser and your life." }
       	end
   	end
   end

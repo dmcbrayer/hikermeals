@@ -14,4 +14,6 @@ class SignupsMailer < ActionMailer::Base
 
   	mail(:to => signup.email, :subject => "Refer friends to earn discounts on trail food!")
   end
+
+
 end

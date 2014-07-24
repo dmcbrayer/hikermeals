@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
                 cookies[:h_ref] = { :value => params[:ref], :expires => 1.week.from_now }
             end
 
+            #this may perhaps be causing the facebook link to just output the basic URL.  Not sure because I think I added this in when I was attempting to fix that problem.
+            
             if request.env["HTTP_USER_AGENT"] and !request.env["HTTP_USER_AGENT"].include?("facebookexternalhit/1.1")
                 redirect_to proc { url_for(params.except(:ref)) }  
             end

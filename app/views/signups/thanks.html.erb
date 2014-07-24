@@ -18,7 +18,9 @@
 
 					<% twitter_message = "It's like having mountain men pack your #trailfood for you.  Check out @hikermeals!" %>
 				    <div class="social-links">
-				        <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@signup.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"></a>
+
+				    
+				        <a href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@signup.referral_code) %>&text=<%= CGI::escape(twitter_message) %>" class="twit" target="_blank"><%= image_tag("twit.png") %></a>
 				      
 				    </div>
 				</div>

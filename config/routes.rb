@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get '/about', to: 'pages#about'
   get '/contact', to: 'pages#contact'
   get '/thanks', to: 'signups#thanks'
+  get '/legal', to: 'pages#legal'
   get '/signups/dwj', to: 'signups#dwj'
 
   # The priority is based upon order of creation: first created -> highest priority.

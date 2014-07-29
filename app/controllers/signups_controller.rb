@@ -3,6 +3,7 @@ class SignupsController < ApplicationController
 
   def new
   	@signup = Signup.new
+    #add a random comment
 
     respond_to do |format|
       format.html
